@@ -16,13 +16,13 @@ suite.add("bencoding#encode", function () {
 	bencoding.encode(data);
 });
 suite.add("bencode#encode", function () {
-	bencode.encode(data.toString());
+	bencode.encode(data);
 });
 suite.add("bncode#encode", function () {
 	bncode.encode(data);
 });
 suite.add("dht-bencode#encode", function () {
-	dhtBencode.bencode(data.toString());
+	dhtBencode.bencode(data);
 });
 
 suite.on('cycle', function (event, bench) {

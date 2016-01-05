@@ -1,3 +1,13 @@
+Difference from original:
+
+* BDict removed, always return JSON
+* strings decoded to strings
+* added separate encoding for `Buffer`
+* added separate encoding for `null`
+* fixed encoding of utf8 strings
+
+This version is not compatible with original [BitTorrent specification](http://www.bittorrent.org/beps/bep_0003.html).
+
 # bencoding
 
 A node library for encoding and decoding data, according to [the

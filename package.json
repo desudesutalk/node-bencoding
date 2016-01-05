@@ -1,6 +1,6 @@
 {
     "name": "bencoding"
-  , "version": "0.0.1"
+  , "version": "0.0.2"
   , "description": "encode/decode bencoded data"
   , "keywords": ["torrent", "bittorrent", "bencode", "bdecode", "bencoding", "buffers"]
   , "author": "Clark Fischer <clark.fischer@gmail.com> (https://github.com/clarkf)"

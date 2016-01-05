@@ -5,20 +5,20 @@ var Benchmark = require('benchmark'),
 	dht = require('dht-bencode'),
 
 	data = require('fs').readFileSync(__dirname + '/../test/support/ubuntu.torrent');
-
+	
 var suite = new Benchmark.Suite;
 
 suite.add("bencoding#decode", function () {
 	bencoding.decode(data);
 });
 suite.add("bencode#decode", function () {
-	bencode.decode(data.toString());
+	bencode.decode(data);
 });
 suite.add("bncode#decode", function () {
 	bncode.decode(data);
 });
 suite.add("dht-bencode#decode", function () {
-	dht.bdecode(data.toString());
+	dht.bdecode(data);
 });
 
 suite.on('cycle', function (event, bench) {
